@@ -1,0 +1,164 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+
+   
+   
+}
+.pizza-login-container{
+   background-color: black;
+  min-height: 100vh;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-head{
+      font-size: 30px;
+      font-weight: bold;
+      font-family: cursive;
+      color: #ffffff;
+
+}
+
+
+
+.login-items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   
+  
+}
+
+.login-label{
+    align-self: flex-start;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.forgot-password{
+    margin-top: 5px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.forgot-password:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.login-input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: cursive;
+    border: 10px;
+    outline: none;
+  
+}
+
+.input-visible{
+   position: relative;
+}
+
+.login-button{
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: cursive;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    min-width: 100px;
+}
+.login-message{
+    color: crimson;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.login-button:hover{
+    background-color: #ffc425;
+    color: #ffffff;
+}
+
+.login-message-signup{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.signup-link{
+    text-decoration: underline;
+    border-color: #ffc425;
+    cursor: pointer;
+
+}
+.signup-link:hover{
+    color: crimson;
+}
+
+
+.password-toggle-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-toggle-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+
+@media screen and (max-width:576px){
+    .login-image{
+        width: 100%;
+        position: relative;
+         margin-bottom: 0px;
+         margin-top: 200px;
+    }
+    .pizza-login-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .login-input{
+        width: 200px;
+    }
+}
+
+
+
+
+@media screen and (min-width:576px){
+    
+.login-image{
+    width: 50%;
+}
+}

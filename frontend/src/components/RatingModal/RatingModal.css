@@ -1,0 +1,119 @@
+/* General modal styles */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ReactModal__Content.rating-modal {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 130px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+  
+  .star-rating p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .star-rating .star {
+    font-size: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: grey;
+  }
+  
+  .star-rating .star.selected {
+    color: orange;
+  }
+  
+  .comment-container {
+    margin-top: 20px;
+  }
+  
+  .comment-container p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .textarea-rating {
+    width: 80%;
+    height: 80px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-right: 20px;
+  }
+  
+  .textarea-rating:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .rating-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .rating-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* RatingModal.css */
+.star.disabled {
+  cursor: not-allowed;
+  color: gray; /* or any other color to indicate disabled state */
+}
+
+.textarea-rating:disabled {
+  background-color: #f0f0f0; /* or any other color to indicate disabled state */
+}
+
+.rating-button:disabled {
+  background-color: #ccc; /* or any other color to indicate disabled state */
+  cursor: not-allowed;
+}
+
+@media screen and (max-width:576px){
+  .ReactModal__Content.rating-modal{
+    margin-top: 130px;
+    margin-left:20px ;
+    margin-bottom: 50px;
+    margin-right: 20px;
+   
+  }
+}

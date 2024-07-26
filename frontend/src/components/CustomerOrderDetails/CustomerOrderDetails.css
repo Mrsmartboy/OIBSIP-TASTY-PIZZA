@@ -1,0 +1,100 @@
+.admin-dashboard-container {
+    display: flex;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Ensure container takes full viewport height */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow-y: auto; /* Ensure content can scroll if needed */
+  }
+  .pizza-name{
+    font-size: 15px;
+    font-family: 'Pacifico',cursive;
+    font-weight: 500;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    max-height: 400px; /* Set a max height to allow scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .delete-order{
+    border: none;
+    background-color: #f6d365;
+    border-radius: 10px;
+    outline: none;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .delete-order:hover{
+    background-color: #ddd;
+  }
+  
+  .order-details-table,
+  .payment-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+ 
+  .order-details-table th,
+  .payment-details-table th,
+  .order-details-table td,
+  .payment-details-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .order-details-table th,
+  .payment-details-table th
+   {
+    background-color: #f6d365;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .order-details-table tr:nth-child(even),
+  .payment-details-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .order-details-table tr:hover,
+  .payment-details-table tr:hover {
+    background-color: #fda085;
+    color: white;
+  }
+  
+  .order-details-table select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+  }
+  
+  .order-details-table td div {
+    margin-bottom: 4px;
+  }
+  
+  .select-option{
+    cursor: pointer;
+  }

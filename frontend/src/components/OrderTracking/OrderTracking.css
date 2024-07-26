@@ -1,0 +1,153 @@
+.order-tracking-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff5e1; /* Light pizza color */
+}
+
+.order-tracking-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: 90vh;
+}
+
+.time {
+  align-self: flex-end;
+  font-size: 15px;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  font-size: 55px;
+  color: gray;
+  width: 200px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #1f1d1d;
+  z-index: 1;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+  width: 150px;
+}
+
+.label.cancelled {
+  color: red;
+  font-weight: bold;
+}
+
+.icon-container {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon, .dot, .label {
+  margin: 3px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #181717;
+  left: 54%;
+  top: 40px;
+  z-index: 0;
+}
+
+.step.active .icon,
+.step.active .label,
+.step.active .time {
+  color: orange;
+}
+
+.step.active .dot {
+  background-color: orange;
+}
+
+.step.active .line {
+  background-color: orange;
+}
+
+/* Additional styles for cancelled status */
+.step.cancelled .icon,
+.step.cancelled .label,
+.step.cancelled .time {
+  color: red;
+}
+
+.step.cancelled .dot {
+  background-color: red;
+}
+
+.step.cancelled .line {
+  background-color: crimson;
+}
+
+.bodi {
+  background-color: #fff5e1;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #d2691e;
+}
+
+.order-tracking-container {
+  border: 2px solid #d2691e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order-tracking-steps {
+  background-color: #ffe4b5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+@media screen and (max-width:576px) {
+  .order-tracking-steps{
+    background-color: transparent;
+  }
+  .order-tracking-container{
+    margin: 10px;
+    margin-top: 130px;
+  }
+}
+
+.step.active .icon,
+.step.active .label,
+.step.active .time {
+  color: #d2691e;
+}

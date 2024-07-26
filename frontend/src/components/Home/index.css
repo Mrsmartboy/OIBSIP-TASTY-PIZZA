@@ -1,0 +1,294 @@
+.home-container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-component {
+    width: 100%;
+}
+
+.banner-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pizza-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.all-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7d7d5;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.card-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    border: 4px solid none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fae871;
+    border-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-title, .look-menu {
+    font-family: 'Pacifico';
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.card-description {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Pacifico';
+}
+
+.card-button {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.card-button:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.pizza-menu-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: center;
+}
+
+.pizza-menu-image {
+    width: 50%;
+    height: 650px;
+    border-radius: 20px;
+}
+
+.pizza-menu-head {
+    color: crimson;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pizza-menu-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+}
+
+.pizza-menu-quotes {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+.pizza-menu-description {
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button-menu {
+    background-color: rgb(242, 167, 167);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+}
+
+.button-menu:hover {
+    background-color: #f4770a;
+}
+
+
+.pizza-list-main-container{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  
+}
+
+.no-pizza{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Pacifico',cursive;
+    margin: 0px;
+}
+
+
+.showmore-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.showmore-button:hover{
+    color: crimson;
+}
+
+@media screen and (max-width: 600px) {
+    .look-menu{
+        font-size: 20px;
+    }
+   .pizza-menu-quotes{
+    font-size: 10px;
+   }
+   .pizza-menu-description{
+    font-size: 8px;
+   }
+   .hurry-up{
+    font-size: 20px;
+   }
+    .pizza-banner {
+        width: 100%;
+        height: auto;
+    }
+    .pizza-banner{
+        margin-top: 100px;
+    }
+    .card-image {
+        width: 90%;
+    }
+    .category-title {
+        font-size: 20px;
+    }
+    .card-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .pizza-menu-container {
+        flex-direction: column;
+    }
+    .pizza-menu-image {
+        width: 100%;
+        height: auto;
+    }
+    .pizza-menu-data-container {
+        width: 100%;
+        padding: 0px;
+    }
+    .pizza-menu-description{
+        font-size: 20px;
+    }
+    .pizza-menu-head{
+        font-size: 18px;
+    }
+    .pizza-menu-quotes{
+        font-size: 30px;
+    }
+    .card-description{
+        font-size: 14px;
+    }
+    .card-button{
+        font-size: 14px;
+        padding: 4px;
+    }
+    .card-image{
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+    .card-image {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .card-image {
+        width: 100%;
+        height: 300px;
+    }
+    .card-description{
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .card-image {
+        width: 100%;
+        height: 200px;
+    }
+    .card{
+        width: 30%;
+        height: 500px;
+    }
+    .pizza-menu-description{
+        font-size: 20px;
+    }
+    .pizza-menu-head{
+        font-size: 20px;
+    }
+    .pizza-menu-quotes{
+        font-size: 20px;
+    }
+    .card-description{
+        font-size: 17px;
+    }
+}

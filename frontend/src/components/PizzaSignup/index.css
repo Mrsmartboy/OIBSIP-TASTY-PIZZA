@@ -1,0 +1,234 @@
+.form-container-signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background-color: black;
+  
+}
+
+.header-signlogin{
+    padding-bottom: 30px;
+}
+
+.signup-input-container{
+    display: flex;
+    flex-direction: column;
+  
+}
+.signup-head{
+    color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: cursive;
+  margin-top: 30px;
+}
+
+.signup-label{
+    align-self: flex-start;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.input-signup{
+    margin-bottom: 10px;
+    border: 10px;
+    border-radius: 10px;
+    outline: none;
+    line-height: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: cursive;
+
+}
+
+.signup-button{
+    background-color: skyblue;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: cursive;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.signup-button:hover{
+    background-color: #ffc425;
+    color: #ffffff;
+}
+
+.signup-error-message{
+    color: rgb(240, 7, 54);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    width: 250px;
+
+}
+
+.success{
+    color: #00a161;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+.signup-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.user-exist{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.login-link{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-link:hover{
+    color: crimson;
+
+}
+
+.signup-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-visible {
+    position: relative;
+  }
+  
+  .password-toggle-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-toggle-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+@media screen and (min-width:700px){
+    .pizza-image{
+        width: 50%;
+        border-radius: 20px;
+       margin-left: 20px;
+       margin-right: 20px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+   
+}
+
+@media screen and (min-width:900px){
+    .pizza-image{
+        width: 25%;
+        border-radius: 20px;
+       margin-left: 20px;
+       margin-right: 20px;
+        justify-content: center;
+    }
+    .input-signup{
+        width: 250px;
+    }
+   
+}
+
+@media screen and (min-width:1000px){
+    .pizza-image{
+        width: 25%;
+        border-radius: 20px;
+       margin-left: 20px;
+       margin-right: 20px;
+        justify-content: center;
+    }
+    .input-signup{
+        width: 260px;
+    }
+   
+}
+
+
+
+
+@media screen and (max-width:676px){
+    .signup-image-container{
+        flex-direction: column;
+        width: 80%;
+        
+    }
+    .pizza-image{
+        width: 60%;
+        margin-top: 20px;
+        border-radius: 20px;
+        justify-content: center;
+        margin-top: 200px;
+       
+    }
+    .input-signup{
+        width: 200px;
+    }
+}
+
+.resend-otp-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-family: 'Pacifico';
+    color: #ffffff;
+    cursor: pointer;
+}
+.resend-otp-button:hover{
+    color: crimson;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

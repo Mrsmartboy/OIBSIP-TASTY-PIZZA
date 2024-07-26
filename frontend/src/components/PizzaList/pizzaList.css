@@ -1,0 +1,145 @@
+
+
+
+.list-container{
+    margin: 15px;
+    background-color:transparent;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 470px;
+    padding: 15px;
+    border:4px solid chocolate;
+    margin-left: 0px;
+
+}
+
+.pizza-item-image{
+    width: 100%;
+    height: 300px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   border-radius: 25%;
+}
+
+.item-name{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Pacifico',cursive;
+    margin: 0px;
+}
+.item-description{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Pacifico';
+    margin: 0px;
+}
+
+.price-data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.item-price-discount{
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 15px;
+
+}
+
+.item-price{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.add-cart-button{
+    box-sizing: border-box;
+    box-shadow: inset;
+    background-color: transparent;
+   color: rgb(52, 237, 11);
+    font-weight: bold;
+    border: 3px solid  rgb(8, 113, 249);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.add-cart-button:hover{
+    background-color: blueviolet;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+   .list-container{
+    margin: 10px;
+    width: 250px;
+    padding: 10px;
+   }
+   .pizza-item-image{
+    width: 250px;
+    height: 250px;
+   }
+   .item-name{
+    font-size: 20px;
+   }
+   .item-description{
+    font-size: 13px;
+   }
+   .item-price-discount{
+    font-size: 16px;
+   }
+   .item-price{
+    font-size: 16px;
+   }
+}
+
+.list-container:hover{
+    background-color: #333; /* Darken background on hover */
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+
+
+@media screen and (max-width:576px){
+    .list-container{
+        margin: 5px;
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style-type: none;
+       padding-top: 4px;
+       padding-bottom: 4px;
+       }
+       .pizza-item-image{
+        width: 100%;
+       }
+       .item-name{
+        font-size: 22px;
+       }
+       .item-description{
+        font-size: 15px;
+       }
+       .item-price-discount{
+        font-size: 17px;
+       }
+       .item-price{
+        font-size: 17px;
+       }
+       .pizza-item-image{
+        width: 100%;
+        height: 50%;
+        margin-top: 5px;
+       }
+}

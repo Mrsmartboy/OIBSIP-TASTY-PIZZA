@@ -1,0 +1,78 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-menu-title {
+  font-size: 1.9em; /* Reduced font size for the title */
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu-item {
+  padding: 12px; /* Reduced padding for menu items */
+  margin: 8px 0; /* Reduced margin for menu items */
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9em; /* Reduced font size for menu items */
+}
+
+.sidebar-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu-item-active {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.sidebar-menu-item-active:hover {
+  background-color: #ffffff;
+}
+
+.logout-icon {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.sidebar-menu-item-text {
+  vertical-align: middle;
+  font-size: 15px;
+  font-family: monospace,cursive;
+}
+
+
+@media screen and (max-width:576px){
+  .admin-dashboard{
+    width: 40%;
+    min-height: 100vh;
+  }
+
+  
+}
+
+@media screen and (min-width:576px)and (max-width:700px){
+.admin-dashboard{
+  width: 60%;
+}
+  
+}

@@ -1,0 +1,153 @@
+/* Header styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  background-color: #fff; /* Ensure it has a background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+/* Add padding to the body container to account for the fixed header */
+.body-container {
+  padding-top: 70px; /* Adjust this value based on your header height */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* General container styling */
+.order-details-container {
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Order card styling */
+.order-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.order-card h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.order-card h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Table styling */
+.cart-items-table, .payment-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cart-items-table th, .payment-details-table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.cart-items-table td, .payment-details-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.cart-items-table tr:nth-child(even), .payment-details-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cart-items-table tr:nth-child(odd), .payment-details-table tr:nth-child(odd) {
+  background-color: #e9f7ef;
+}
+
+.cart-items-table tr:hover, .payment-details-table tr:hover {
+  background-color: #c8e6c9;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .cart-items-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .cart-items-table th, .payment-details-table th, .cart-items-table td, .payment-details-table td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 525px) {
+  .payment-details-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+/* Background styling */
+.body-container {
+  background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.your-orders {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1b0404;
+  margin-top: 100px;
+
+}
+
+.track-order {
+  color: #f9faf9;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Pacifico';
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #5151e5;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.track-order:hover {
+  background-color: #72edf2;
+  color: #555;
+}
+
+.no-active {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Pacifico';
+}

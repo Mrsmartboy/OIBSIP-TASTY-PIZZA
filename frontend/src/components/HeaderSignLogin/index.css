@@ -1,0 +1,104 @@
+/* Basic styling for larger screens */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  background-color: #fff; /* Change to desired background color */
+  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+  height: 40px;
+}
+
+.logo{
+  width: 60px;
+  height: 50px;
+  
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4d406; /* Tomato color */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  .login-nav{
+    margin-right: 20px;
+  }
+
+
+  
+ 
+  
+  .header-title {
+    font-family: 'Pacifico', cursive; /* Google Font for cursive style */
+    font-size: 28px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-nav a, .header-nav  {
+    text-decoration: none;
+    color: white; /* Ensure links are visible against the background */
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Pacifico',cursive;
+  }
+  
+  .header-nav a:hover, .header-nav  {
+    color: #333;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    
+  
+  .header-title{
+    font-size: 16px;
+  }
+   
+  
+    .header-nav a, .header-nav  {
+      font-size: 14px;
+    }
+    .login-nav{
+      margin-right: 20px;
+    }
+    .logo{
+      width: 50px;
+      margin-right: 0px;
+    }
+   
+    
+  }
+  
+
+
+
+
+
+
+
+

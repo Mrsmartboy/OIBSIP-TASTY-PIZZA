@@ -1,0 +1,102 @@
+.header-container-1 {
+    background-color: #f8f9fa; /* Light gray background for the header container */
+  
+  }
+
+  
+  .past-orders-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f0f4f8; /* Light blue-gray background for the container */
+    min-height: 80vh;
+  }
+  
+  .order-card-1 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for each order card */
+  }
+  .past-date{
+    align-self: flex-start;
+    font-family: 'Pacifico';
+    font-size: 14px;
+    display: flex;
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .past-order-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Pacifico',cursive;
+    margin-top: 100px;
+  }
+  
+  .order-header h3 {
+    margin: 0;
+  }
+  
+  .order-header p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .order-status {
+    color: green;
+    font-weight: bold;
+    font-family: 'Pacifico',cursive;
+  }
+  
+  .order-details {
+    margin-bottom: 10px;
+  }
+
+
+  
+  .order-item {
+    margin-bottom: 5px;
+    font-family: 'Pacifico',cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+  }
+  
+  .order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .reorder-button,
+  .rate-order-button {
+    background-color: #ff9f00; /* Orange color for buttons */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reorder-button:hover,
+  .rate-order-button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+  }
+  
+  .order-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+  }
+  
+  .order-footer p {
+    margin: 0;
+  }
+  

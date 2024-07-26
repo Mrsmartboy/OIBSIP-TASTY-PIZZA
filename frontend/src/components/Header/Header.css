@@ -1,0 +1,137 @@
+.header-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4d406; /* Tomato color */
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo-container .site-titles {
+  font-family: 'Pacifico', cursive; /* Google Font for cursive style */
+  font-size: 20px;
+}
+
+.site-titles{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+}
+
+.logo{
+  width: 80px;
+  height: 60px;
+  
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  margin: 0 15px;
+  font-family: 'Pacifico', cursive; /* Google Font for cursive style */
+  font-size: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: crimson;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-icon {
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logout-icon {
+  margin-right: 5px;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .site-titles {
+    font-size: 15pxpx;
+  }
+  .navigation li {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  .user-icon {
+    font-size: 2em;
+    margin-right: 20px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .header-fixed {
+    height: auto;
+    padding: 10px;
+  }
+  .site-titles {
+    font-size: 10px;
+  }
+  .logo{
+    width: 40px;
+  }
+  .navigation li {
+    margin: 0 5px;
+    font-size: 13px;
+  }
+  .user-icon {
+    font-size: 2em;
+  }
+}

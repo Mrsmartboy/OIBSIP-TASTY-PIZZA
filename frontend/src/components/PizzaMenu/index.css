@@ -1,0 +1,224 @@
+.header-menu-container{
+    background-color: #d7d7d5;
+}
+
+
+.menu-banner-container{
+    display: flex;
+    flex-direction: row;
+     margin: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  
+} 
+.menu-banner-image{
+    width: 50%;
+  
+    border-radius: 30px;
+}
+
+.category-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+}
+
+.category-data-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pizza-menu-image1 {
+    width: 40%;
+  
+    border-radius: 20px;
+}
+.pizza-menu-container1 {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: center;
+}
+
+
+
+.types-category{
+    border: 2px solid salmon;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 380px;
+    height: 180px;
+}
+
+.category-image{
+    width: 150px;
+}
+
+.category-name{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Pacifico',cursive;
+}
+.category-button{
+    background-color: rgb(25, 170, 227);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+
+}
+.category-button:hover{
+    background-color: orange;
+}
+
+.pizza-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hurry-up{
+    font-family: 'Pacifico',cursive;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.showmore-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.showmore-button:hover{
+    color: crimson;
+}
+
+.pizza-menu-container1{
+    margin-top: 50px;
+}
+
+@media screen and (max-width:676px){
+    .pizza-menu-quotes{
+        font-size: 20px;
+    }
+    .pizza-menu-description{
+        font-size: 12px;
+    }
+    .category-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .category-button{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .category-name{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .category-image{
+        width: 100%;
+    }
+    .pizza-menu-container1{
+        margin-top: 100px;
+    }
+    .pizza-menu-image1{
+        width: 100%;
+    }
+    .category-image{
+        width: 100px;
+        margin-bottom: 0px;
+    }
+    .types-category{
+        width: 50%;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 5px;
+        flex-direction: column;
+
+    }
+    .category-container{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .search-input{
+        padding: 10px;
+        width: 50%;
+        height: 30px;
+        outline: none;
+        text-decoration: none;
+    }
+   
+    .pizza-menu-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pizza-menu-image1{
+        width: 100%;
+    }
+    
+    .hurry-up{
+        font-size: 20px;
+    }
+
+    .pizza-list-container{
+        list-style-type:none ;
+        padding-left: 0px;
+    }
+   
+   
+    
+}
+
+@media screen and (max-width:900px) and (min-width:610px){
+   .types-category{
+    width: 180px;
+    margin: 10px;
+    padding: auto;
+   }
+   .category-image{
+      width: 100px;
+   }
+    
+}
+
+.search-label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Pacifico';
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.search-input{
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Pacifico';
+
+}

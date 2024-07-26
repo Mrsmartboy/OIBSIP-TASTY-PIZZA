@@ -1,0 +1,160 @@
+
+
+
+.pizza-details-container{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+
+    width: 100%;
+    min-height: 100vh;
+  padding-top: 20px;
+}
+.header-component-pizza-details{
+    margin-bottom: 100px;
+}
+
+.details-image-container{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.details-image{
+    width: 50%;
+    border-radius: 30px;
+    margin-top: 0px;
+
+}
+
+.details-cart-button{
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+     border-radius: 10px;
+     margin-top: 20px;
+     cursor: pointer;
+     padding: 10px;
+}
+.details-cart-button:hover{
+    background-color: rgb(8, 243, 94);
+    border: none;
+    outline: none;color: #fff;
+
+
+}
+
+.details-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   margin: 10px;
+}
+.details-name{
+    font-family: 'Pacifico',cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+.details-price{
+    font-family: 'Pacifico',cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.details-description{
+   text-align: left;
+   margin-top: 0px;
+   color: rgb(53, 49, 49);
+   font-weight: 600;
+}
+
+.data-details-container{
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+ margin: 10px;
+ border: 2px solid;
+ border-radius: 10px;
+ width: 250px;
+
+}
+
+legend{
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Pacifico',cursive;
+
+}
+.details-label{
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 300;
+    font-family:'Pacifico' ;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width:600px){
+    .pizza-details-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .header-component-pizza-details{
+        margin-bottom: 100px;
+    }
+    .details-image{
+        width: 90%;
+       
+    }
+    .details-data-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .details-description{
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+     }
+     .fieldset{
+        padding-left: 0px;
+        margin: 10px;
+     }
+     .details-label{
+        padding-bottom: 1px;
+     }
+}
+
+@media screen and (min-width:600px) and (max-width:1100px){
+    .pizza-details-container{
+        flex-direction: row;
+       
+    }
+   .details-name{
+    text-align: center;
+   }
+  
+   
+    .details-image{
+        width: 100%;
+    }
+  
+}
+
+
