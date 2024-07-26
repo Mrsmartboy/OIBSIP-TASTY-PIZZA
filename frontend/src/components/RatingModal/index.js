@@ -27,7 +27,7 @@ const RatingModal = ({ isOpen, onRequestClose, order, onRatingSubmit }) => {
       setIsSubmitted(true); // Set submission status
 
 
-      await axios.post('http://localhost:10000/api/rateOrder', {
+      await axios.post('https://oibsip-tasty-pizza.onrender.com/api/rateOrder', {
         orderId: order._id,
         pizzaItem: order.cartItems,
         rating,

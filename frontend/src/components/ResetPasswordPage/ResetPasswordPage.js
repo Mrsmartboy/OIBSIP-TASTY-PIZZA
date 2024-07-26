@@ -29,7 +29,7 @@ const ResetPasswordPage = ({dispatch}) => {
     }
 
     try {
-      const response = await axios.post('http://localhost:10000/reset-password', { token, newPassword });
+      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/reset-password', { token, newPassword });
       setMessage(response.data.message);
       setSuccess(response.data.success);
       toast.success('Reset password successfully',{autoClose:2000})

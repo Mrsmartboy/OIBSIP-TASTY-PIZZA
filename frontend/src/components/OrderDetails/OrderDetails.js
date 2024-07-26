@@ -18,7 +18,7 @@ const OrderDetails = ({ dispatch }) => {
         console.error('No token found');
         return;
       }
-      const response = await axios.get('http://localhost:10000/api/order-details', {
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/order-details', {
         headers: {
           Authorization: `Bearer ${token}`
         },

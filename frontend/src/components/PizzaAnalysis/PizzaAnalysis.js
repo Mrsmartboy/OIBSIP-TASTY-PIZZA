@@ -17,7 +17,7 @@ const PizzaAnalysis = ({ dispatch }) => {
         console.error('No token found');
         return;
       }
-      const response = await axios.get('http://localhost:10000/api/admin/history-data', {
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/admin/history-data', {
         headers: {
           Authorization: `Bearer ${token}`,
         }

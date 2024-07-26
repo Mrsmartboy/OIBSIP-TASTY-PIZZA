@@ -25,7 +25,7 @@ const PastOrders = ({ dispatch }) => {
         return;
       }
       const userId = localStorage.getItem('userId');
-      const response = await axios.get('http://localhost:10000/api/past-orders', {
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/past-orders', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -36,7 +36,7 @@ const PastOrders = ({ dispatch }) => {
 
       try {
         // Fetch rating status for all orders
-        const ratingsResponse = await axios.get('http://localhost:10000/api/order-ratings', {
+        const ratingsResponse = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/order-ratings', {
           headers: {
             Authorization: `Bearer ${token}`
           },
@@ -79,7 +79,7 @@ const PastOrders = ({ dispatch }) => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:10000/api/pizzaDetails/${pizzaId}`, {
+      const response = await axios.get(`https://oibsip-tasty-pizza.onrender.com/api/pizzaDetails/${pizzaId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -158,7 +158,7 @@ const PastOrders = ({ dispatch }) => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:10000/api/rateOrder/${orderId}`, {
+      const response = await axios.get(`https://oibsip-tasty-pizza.onrender.com/api/rateOrder/${orderId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

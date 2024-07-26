@@ -21,7 +21,7 @@ const Home = ({ dispatch }) => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:10000/api/pizzaData`, {
+      const response = await axios.get(`https://oibsip-tasty-pizza.onrender.com/api/pizzaData`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

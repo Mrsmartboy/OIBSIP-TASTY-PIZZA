@@ -18,14 +18,14 @@ const CustomerRatingDetails = ({ dispatch }) => {
         return;
       }
 
-      const response = await axios.get('http://localhost:10000/api/admin/rating-details', {
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/rating-details', {
         headers: {
           Authorization: `Bearer ${token}`,
         }
       });
       setRatingDetails(response.data);
 
-      const userResponse = await axios.get('http://localhost:10000/api/admin/user-data', {
+      const userResponse = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/admin/user-data', {
         headers: {
           Authorization: `Bearer ${token}`,
         }

@@ -70,7 +70,7 @@ const PizzaSignup = ({dispatch}) => {
     setLoading(true); // Show loader
 
     try {
-      const response = await axios.post('http://localhost:10000/api/signup', {
+      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/api/signup', {
         name,
         email,
         address,
@@ -119,7 +119,7 @@ const PizzaSignup = ({dispatch}) => {
 
   const handleResendOtp = useCallback( async () => {
     try {
-      const response = await axios.post('http://localhost:10000/api/resend-otp', { email: formData.email });
+      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/api/resend-otp', { email: formData.email });
       if (response.data.success) {
         toast.success('OTP resent to your email!');
         setOtpTimer(60); // Reset timer for 30 seconds

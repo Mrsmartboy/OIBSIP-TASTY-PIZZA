@@ -14,7 +14,7 @@ const AdminLogin = ({ dispatch }) => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:10000/api/admin/login', {
+      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/api/admin/login', {
         email,
         password,
       });

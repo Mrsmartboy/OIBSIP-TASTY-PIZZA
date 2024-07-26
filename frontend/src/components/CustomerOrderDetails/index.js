@@ -16,7 +16,7 @@ const CustomerOrderDetails = ({ dispatch }) => {
         return;
       }
 
-      const response = await axios.get('http://localhost:10000/api/admin/order-details', {
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/admin/order-details', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -44,7 +44,7 @@ const CustomerOrderDetails = ({ dispatch }) => {
       }
 
       await axios.put(
-        `http://localhost:10000/api/admin/order-details/${orderId}`,
+        `https://oibsip-tasty-pizza.onrender.com/api/admin/order-details/${orderId}`,
         { status },
         {
           headers: {
@@ -61,7 +61,7 @@ const CustomerOrderDetails = ({ dispatch }) => {
         const orderTime= new Date();
         if (completedOrder) {
           await axios.post(
-            `http://localhost:10000/api/admin/order-history`,
+            `https://oibsip-tasty-pizza.onrender.com/api/admin/order-history`,
             { completedOrder,status,orderTime},
             {
               headers: {
@@ -86,7 +86,7 @@ const CustomerOrderDetails = ({ dispatch }) => {
         return;
       }
 
-      await axios.delete(`http://localhost:10000/api/admin/order-details/${orderId}`, {
+      await axios.delete(`https://oibsip-tasty-pizza.onrender.com/api/admin/order-details/${orderId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }

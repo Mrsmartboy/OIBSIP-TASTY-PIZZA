@@ -38,7 +38,7 @@ const PizzaDetails = ({ dispatch }) => {
       return;
     }
     try {
-      const response = await axios.get(`http://localhost:10000/api/pizzaExtra`, {
+      const response = await axios.get(`https://oibsip-tasty-pizza.onrender.com/api/pizzaExtra`, {
         headers: {
           Authorization: `Bearer ${token}`
         } 
@@ -65,7 +65,7 @@ const PizzaDetails = ({ dispatch }) => {
       }
 
       try {
-        const response = await axios.get(`http://localhost:10000/api/pizzaDetails/${pizzaId}`, {
+        const response = await axios.get(`https://oibsip-tasty-pizza.onrender.com/api/pizzaDetails/${pizzaId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }

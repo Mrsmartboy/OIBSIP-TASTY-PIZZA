@@ -28,7 +28,7 @@ const PizzaLogin =({dispatch}) =>{
               event.preventDefault()
            const {email,password} = loginForm 
            try{
-            const response = await axios.post('http://localhost:10000/api/login',{
+            const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/api/login',{
                 email,password
             })
           
