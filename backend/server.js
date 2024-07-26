@@ -14,7 +14,14 @@ const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_key';
 const mongoURI = process.env.MONGO_URI || 'mongodb+srv://joseph:Joseph%40123@cluster0.cqxab0q.mongodb.net/?ssl=true&tlsAllowInvalidCertificates=true&tlsAllowInvalidHostnames=true';
 
 const frontendURL=process.env.CLIENT_URL ||  "https://joseph-tasty-pizza.vercel.app"
-app.use(cors());
+
+const corsOptions = {
+  origin: process.env.CLIENT_URL || 'https://joseph-tasty-pizza.vercel.app',
+  methods: 'GET,POST,PUT,DELETE',
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 let db;
