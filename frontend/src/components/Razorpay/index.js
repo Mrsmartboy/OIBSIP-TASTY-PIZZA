@@ -18,7 +18,7 @@ export const createOrder = async (amount) => {
 
   try {
     const response = await axios.post(
-      'http://localhost:5000/api/create-order',
+      'http://localhost:10000/api/create-order',
       { amount: amount * 100 }, // Convert amount to paise
       {
         headers: {

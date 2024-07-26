@@ -83,7 +83,7 @@ const Cart = ({ dispatch }) => {
     }
 
     try {
-      const verifyResponse = await axios.post('http://localhost:5000/api/verify-payment', response, {
+      const verifyResponse = await axios.post('http://localhost:10000/api/verify-payment', response, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -124,7 +124,7 @@ const Cart = ({ dispatch }) => {
           }
         };
 
-        const data = await axios.post('http://localhost:5000/api/order-details', orderDetailsData, {
+        const data = await axios.post('http://localhost:10000/api/order-details', orderDetailsData, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -144,7 +144,7 @@ const Cart = ({ dispatch }) => {
 
           try {
             await axios.put(
-              'http://localhost:5000/api/pizza-update',
+              'http://localhost:10000/api/pizza-update',
               {
                 cartItems: cartItems.map(item => ({
                   pizzaId: item.pizzaId,

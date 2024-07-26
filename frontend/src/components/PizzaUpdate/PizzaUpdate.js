@@ -23,7 +23,7 @@ const PizzaUpdate = ({ dispatch }) => {
         return;
       }
 
-      const response = await axios.get('http://localhost:5000/api/admin/pizza-details', {
+      const response = await axios.get('http://localhost:10000/api/admin/pizza-details', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -45,7 +45,7 @@ const PizzaUpdate = ({ dispatch }) => {
         return;
       }
       const response =await axios.put(
-        `http://localhost:5000/api/admin/pizza-update/${pizzaId}`,
+        `http://localhost:10000/api/admin/pizza-update/${pizzaId}`,
         { quantity: parseInt(editPizzaQuantity) },
         {
           headers: {
@@ -75,7 +75,7 @@ const PizzaUpdate = ({ dispatch }) => {
       }
   
       // Fetch the pizza details before deleting
-      const pizzaResponse = await axios.get(`http://localhost:5000/api/admin/pizza-details/${pizzaId}`, {
+      const pizzaResponse = await axios.get(`http://localhost:10000/api/admin/pizza-details/${pizzaId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }
@@ -83,14 +83,14 @@ const PizzaUpdate = ({ dispatch }) => {
   
       const pizzaData = pizzaResponse.data;
       // Post the pizza details to the deleted-pizzas endpoint
-      await axios.post(`http://localhost:5000/api/admin/deleted-pizzas`, {pizzaData}, {
+      await axios.post(`http://localhost:10000/api/admin/deleted-pizzas`, {pizzaData}, {
         headers: {
           Authorization: `Bearer ${token}`,
         }
       });
   
       // Delete the pizza
-      await axios.delete(`http://localhost:5000/api/admin/pizza-delete/${pizzaId}`, {
+      await axios.delete(`http://localhost:10000/api/admin/pizza-delete/${pizzaId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }

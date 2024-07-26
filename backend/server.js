@@ -9,7 +9,7 @@ const crypto = require('crypto')
 const nodemailer = require('nodemailer');
 const mongoose = require('mongoose');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 10000;
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_key';
 const mongoURI = process.env.MONGO_URI || 'mongodb+srv://joseph:Joseph%40123@cluster0.cqxab0q.mongodb.net/?ssl=true&tlsAllowInvalidCertificates=true&tlsAllowInvalidHostnames=true';
 

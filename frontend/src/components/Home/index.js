@@ -21,7 +21,7 @@ const Home = ({ dispatch }) => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/pizzaData`, {
+      const response = await axios.get(`http://localhost:10000/api/pizzaData`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

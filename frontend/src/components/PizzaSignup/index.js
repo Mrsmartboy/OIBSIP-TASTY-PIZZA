@@ -70,7 +70,7 @@ const PizzaSignup = ({dispatch}) => {
     setLoading(true); // Show loader
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.post('http://localhost:10000/api/signup', {
         name,
         email,
         address,
@@ -97,7 +97,7 @@ const PizzaSignup = ({dispatch}) => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/verify-otp', { email: formData.email, otp });
+      const response = await axios.post('http://localhost:10000/api/verify-otp', { email: formData.email, otp });
       if (response.data.success) {
         toast.success('Email verified successfully!', { autoClose: 1000 });
         navigate('/login', { replace: true });
@@ -119,7 +119,7 @@ const PizzaSignup = ({dispatch}) => {
 
   const handleResendOtp = useCallback( async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/resend-otp', { email: formData.email });
+      const response = await axios.post('http://localhost:10000/api/resend-otp', { email: formData.email });
       if (response.data.success) {
         toast.success('OTP resent to your email!');
         setOtpTimer(60); // Reset timer for 30 seconds

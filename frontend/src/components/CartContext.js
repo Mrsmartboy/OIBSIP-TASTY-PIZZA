@@ -52,7 +52,7 @@ export const CartProvider = ({ children }) => {
 
     try { 
       const response = await axios.post(
-        'http://localhost:5000/api/cart',
+        'http://localhost:10000/api/cart',
         { pizza, quantity,discountPrice,dataDetails,eachUnitPrice },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -71,7 +71,7 @@ export const CartProvider = ({ children }) => {
     }
 
     try {
-      await axios.delete('http://localhost:5000/api/cart', {
+      await axios.delete('http://localhost:10000/api/cart', {
         headers: { Authorization: `Bearer ${token}` },
         data: { cartId }
       });
@@ -89,7 +89,7 @@ export const CartProvider = ({ children }) => {
     }
 
     try {
-      const response = await axios.get('http://localhost:5000/api/cart', {
+      const response = await axios.get('http://localhost:10000/api/cart', {
         headers: { Authorization: `Bearer ${token}` }
       });
       dispatch({ type: 'SET_CART', payload: response.data.cart.items });
@@ -112,7 +112,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       await axios.put(
-        'http://localhost:5000/api/cart',
+        'http://localhost:10000/api/cart',
         { cartId, quantity, totalPrice },
         { headers: { Authorization: `Bearer ${token}` } }
       );

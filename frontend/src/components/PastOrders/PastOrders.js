@@ -25,7 +25,7 @@ const PastOrders = ({ dispatch }) => {
         return;
       }
       const userId = localStorage.getItem('userId');
-      const response = await axios.get('http://localhost:5000/api/past-orders', {
+      const response = await axios.get('http://localhost:10000/api/past-orders', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -36,7 +36,7 @@ const PastOrders = ({ dispatch }) => {
 
       try {
         // Fetch rating status for all orders
-        const ratingsResponse = await axios.get('http://localhost:5000/api/order-ratings', {
+        const ratingsResponse = await axios.get('http://localhost:10000/api/order-ratings', {
           headers: {
             Authorization: `Bearer ${token}`
           },
@@ -79,7 +79,7 @@ const PastOrders = ({ dispatch }) => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/pizzaDetails/${pizzaId}`, {
+      const response = await axios.get(`http://localhost:10000/api/pizzaDetails/${pizzaId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -158,7 +158,7 @@ const PastOrders = ({ dispatch }) => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/rateOrder/${orderId}`, {
+      const response = await axios.get(`http://localhost:10000/api/rateOrder/${orderId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

@@ -18,14 +18,14 @@ const CustomerRatingDetails = ({ dispatch }) => {
         return;
       }
 
-      const response = await axios.get('http://localhost:5000/api/admin/rating-details', {
+      const response = await axios.get('http://localhost:10000/api/admin/rating-details', {
         headers: {
           Authorization: `Bearer ${token}`,
         }
       });
       setRatingDetails(response.data);
 
-      const userResponse = await axios.get('http://localhost:5000/api/admin/user-data', {
+      const userResponse = await axios.get('http://localhost:10000/api/admin/user-data', {
         headers: {
           Authorization: `Bearer ${token}`,
         }
