@@ -7,13 +7,13 @@ const Razorpay = require('razorpay');
 const { MongoClient, ObjectId } = require('mongodb');
 const crypto = require('crypto')
 const nodemailer = require('nodemailer');
-
+const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_key';
 const mongoURI = process.env.MONGO_URI || 'mongodb+srv://joseph:Joseph%40123@cluster0.cqxab0q.mongodb.net/?ssl=true&tlsAllowInvalidCertificates=true&tlsAllowInvalidHostnames=true';
-const dbName = 'Pizza';
 
+const frontendURL=process.env.CLIENT_URL ||  "https://joseph-tasty-pizza.vercel.app"
 app.use(cors());
 app.use(express.json());
 
@@ -21,18 +21,9 @@ let db;
 
 
 
-
-
-MongoClient.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(client => {
-    console.log('Connected to MongoDB');
-    db = client.db(dbName);
-  })
-  .catch(err => {
-    console.error('Could not connect to MongoDB', err);
-    process.exit(1);
-  });
-
+mongoose.connect(mongoURI)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log('MongoDB connection error:', err));
 
   // configure nodemailer 
 
@@ -161,7 +152,7 @@ app.post('/forgot-password', async (req, res) => {
     );
 
     // Send the password reset email
-    const resetUrl = `http://localhost:3000/reset-password?token=${token}`;
+    const resetUrl = `${frontendURL}/reset-password?token=${token}`;
 
     await transporter.sendMail({
       from:'tastypizzaapp@gmail.com',
