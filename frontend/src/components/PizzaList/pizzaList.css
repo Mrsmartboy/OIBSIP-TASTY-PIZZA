@@ -111,6 +111,10 @@
 
 }
 
+.list-container:hover .add-cart-button {
+    color: orange; /* Change Add to Cart button text color on hover */
+}
+
 
 
 @media screen and (max-width:576px){
