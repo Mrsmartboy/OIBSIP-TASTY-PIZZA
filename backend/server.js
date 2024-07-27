@@ -20,7 +20,7 @@ app.use(express.json());
 
 let db;
 
-CLIENT_URL= "https://josephtastypizza.vercel.app"
+const CLIENT_URL= "https://josephtastypizza.vercel.app"
 
 
 
@@ -162,7 +162,7 @@ app.post('/forgot-password', async (req, res) => {
     );
 
     // Send the password reset email
-    const resetUrl = `${process.env.CLIENT_URL}/reset-password?token=${token}`;
+    const resetUrl = `${CLIENT_URL}/reset-password?token=${token}`;
 
     await transporter.sendMail({
       from:'tastypizzadeliveryapp@gmail.com',
