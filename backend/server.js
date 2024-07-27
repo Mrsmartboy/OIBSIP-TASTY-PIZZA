@@ -61,7 +61,7 @@ app.post('/api/signup', async (req, res) => {
     const otp = crypto.randomBytes(3).toString('hex');
     // Send OTP email
     const mailOptions = {
-      from: 'tastypizzaapp@gmail.com',
+      from: 'tastypizzadeliveryapp@gmail.com',
       to: email,
       subject: 'Verify your email',
       text: `Your OTP is ${otp}`,
@@ -126,7 +126,7 @@ app.post('/api/resend-otp', async (req, res) => {
 
     // Send OTP via email
     await transporter.sendMail({
-      from: 'tastypizzaapp@gmail.com',
+      from: 'tastypizzadeliveryapp@gmail.com',
       to: email,
       subject: 'Your OTP Code',
       text: `Your OTP code is ${otp}`
@@ -165,7 +165,7 @@ app.post('/forgot-password', async (req, res) => {
     const resetUrl = `${process.env.CLIENT_URL}/reset-password?token=${token}`;
 
     await transporter.sendMail({
-      from:'tastypizzaapp@gmail.com',
+      from:'tastypizzadeliveryapp@gmail.com',
       to: email,
       subject: 'Password Reset',
       text: `You requested a password reset. Please click the following link to reset your password: ${resetUrl}`
