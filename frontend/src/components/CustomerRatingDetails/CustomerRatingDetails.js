@@ -18,7 +18,7 @@ const CustomerRatingDetails = ({ dispatch }) => {
         return;
       }
 
-      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/rating-details', {
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/admin/rating-details', {
         headers: {
           Authorization: `Bearer ${token}`,
         }
