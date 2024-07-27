@@ -24,7 +24,7 @@ const CLIENT_URL= "https://josephtastypizza.vercel.app"
 
 
 
-MongoClient.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+MongoClient.connect(mongoURI)
   .then(client => {
     console.log('Connected to MongoDB');
     db = client.db(dbName);
