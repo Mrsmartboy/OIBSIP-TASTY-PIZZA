@@ -17,8 +17,8 @@ const CustomerRatingDetails = ({ dispatch }) => {
         console.error('No token found');
         return;
       }
-
-      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/rating-details', {
+ // retrieve data user rating details
+      const response = await axios.get('https://oibsip-tasty-pizza.onrender.com/api/admin/rating-details', {
         headers: {
           Authorization: `Bearer ${token}`,
         }

@@ -97,7 +97,7 @@ const PizzaSignup = ({dispatch}) => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:10000/api/verify-otp', { email: formData.email, otp });
+      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/api/verify-otp', { email: formData.email, otp });
       if (response.data.success) {
         toast.success('Email verified successfully!', { autoClose: 1000 });
         navigate('/login', { replace: true });
