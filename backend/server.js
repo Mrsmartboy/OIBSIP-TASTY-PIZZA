@@ -12,7 +12,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const port = process.env.PORT || 10000;
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_key';
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://joseph:Joseph%40123@cluster0.cqxab0q.mongodb.net/?ssl=true&tlsAllowInvalidCertificates=true&tlsAllowInvalidHostnames=true';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://joseph:Joseph%40123@cluster0.cqxab0q.mongodb.net/Pizza?retryWrites=true&w=majority';
 const dbName = 'Pizza';
 
 app.use(cors());
