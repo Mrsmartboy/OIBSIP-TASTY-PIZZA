@@ -141,7 +141,7 @@ app.post('/api/resend-otp', async (req, res) => {
 
 
 // Route to handle forgot password request
-app.post('/forgot-password', async (req, res) => {
+app.post('/api/forgot-password', async (req, res) => {
   const { email } = req.body;
 
   try {
@@ -179,7 +179,7 @@ app.post('/forgot-password', async (req, res) => {
 });
 
 // Route to handle password reset (this should be implemented on the frontend as well)
-app.post('/reset-password', async (req, res) => {
+app.post('/api/reset-password', async (req, res) => {
   const { token, newPassword } = req.body;
 
   try {
