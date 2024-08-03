@@ -12,7 +12,7 @@ const ForgotPasswordForm = ({dispatch}) => {
   const handleSubmit = useCallback(async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/forgot-password', { email });
+      const response = await axios.post('https://oibsip-tasty-pizza.onrender.com/api/forgot-password', { email });
       setMessage(response.data.message);
       toast.success("Check your email",{autoClose:2000})
       toast.success("Reset the password",{autoClose:2000})
