@@ -757,7 +757,7 @@ app.put('/api/admin/order-details/:orderId', authenticateAdminToken, async (req,
       {
         $set: {
           'paymentDetails.status': status,
-          'paymentDetails.time': strTime
+          'paymentDetails.ptime': strTime
         }
       }
     );
