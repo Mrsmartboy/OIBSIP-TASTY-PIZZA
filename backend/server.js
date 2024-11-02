@@ -751,6 +751,7 @@ app.put('/api/admin/order-details/:orderId', authenticateAdminToken, async (req,
     const ampm = hours >= 12 ? 'pm' : 'am';
     minutes = minutes < 10 ? '0' + minutes : minutes;
     const strTime = (hours % 12 || 12) + ':' + minutes + ' ' + ampm;
+    console.log(strTime)
 
     const result = await db.collection('orderDetails').updateOne(
       { _id: new ObjectId(orderId) },
