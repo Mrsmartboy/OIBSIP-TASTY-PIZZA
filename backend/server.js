@@ -750,14 +750,14 @@ app.put('/api/admin/order-details/:orderId', authenticateAdminToken, async (req,
     let minutes = date.getMinutes();
     const ampm = hours >= 12 ? 'pm' : 'am';
     minutes = minutes < 10 ? '0' + minutes : minutes;
-    const strTime = (hours % 12 || 12) + ':' + minutes + ' ' + ampm;
+    const strTime = (hours % 12) + ':' + minutes + ' ' + ampm;
 
     const result = await db.collection('orderDetails').updateOne(
       { _id: new ObjectId(orderId) },
       {
         $set: {
           'paymentDetails.status': status,
-          'paymentDetails.ptime': strTime
+          'paymentDetails.time': strTime
         }
       }
     );
